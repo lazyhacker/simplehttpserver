@@ -1,6 +1,6 @@
-A http server similar to Python's SimpleHTTPServer with CORS support. This is
-not meant to be a production server. It was written primarily to have a handy
-HTTP server available to use during developing.
+A http server similar to Python's SimpleHTTPServer module. This is not meant to
+be a production server. It was written primarily to have a handy HTTP server
+available to use during developing.
 
 ## Install
 
