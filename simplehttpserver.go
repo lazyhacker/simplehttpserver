@@ -27,6 +27,6 @@ func main() {
 
 	http.Handle("/", LogRequestHandler(http.FileServer(http.Dir("."))))
 
-	log.Printf("Starting HTTP on %s port %s ...\n", host, p)
+	log.Printf("Starting HTTP on %s:%s ...\n", host, p)
 	log.Fatal(http.ListenAndServe(host+":"+p, nil))
 }
