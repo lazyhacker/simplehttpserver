@@ -1,8 +1,11 @@
+// simplehttpserver is a basic web server similar to Python SimpleHTTPServer module.
+// It is intended only to be used for quick testing work and not for production use!
 package main
 
 import (
 	"flag"
 	"log"
+	"mime"
 	"net/http"
 	"strconv"
 )
@@ -25,6 +28,7 @@ func main() {
 	flag.Parse()
 	p := strconv.Itoa(port)
 
+	mime.AddExtensionType(".wasm", "application/wasm")
 	http.Handle("/", LogRequestHandler(http.FileServer(http.Dir("."))))
 
 	log.Printf("Starting HTTP on %s:%s ...\n", host, p)
