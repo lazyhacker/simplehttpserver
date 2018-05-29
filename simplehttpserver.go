@@ -1,6 +1,6 @@
 // simplehttpserver is a basic web server similar to Python SimpleHTTPServer module.
 // It is intended only to be used for quick testing work and not for production use!
-package main
+package main // import "lazyhackergo.com/simplehttpserver"
 
 import (
 	"flag"
