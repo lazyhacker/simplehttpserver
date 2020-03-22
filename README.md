@@ -3,7 +3,7 @@ A http server similar to Python's SimpleHTTPServer module. This is not meant to 
 Install
 -------
 
-`go install lazyhackergo.com/simplehttpserver`
+`go install lazyhacker.dev/simplehttpserver`
 
 Running
 -------
